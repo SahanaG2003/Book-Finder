@@ -1,3 +1,46 @@
+# 📚 Book Finder
+
+Book Finder is a React-based web app that allows users to search for books using the [Open Library API](https://openlibrary.org/developers/api).  
+It provides features like saving books, creating a personal learning list, tracking recent searches, viewing ratings, and pagination.  
+
+Live Demo 👉 [Findubook on Netlify](https://findubook.netlify.app)
+
+---
+
+## ✨ Features
+
+- 🔍 **Book Search** – Search books by title using the Open Library API.  
+- ⭐ **Save Books** – Add books to a "Saved" list for later reference.  
+- 📖 **Learning List** – Move books from Saved into a dedicated learning list.  
+- ⏱ **Recent Searches** – Quickly re-run your last 5 searches.  
+- ⭐ **Ratings Integration** – Fetch and display average ratings for books.  
+- 📑 **Pagination & Load More** – Easily browse through multiple pages of results.  
+- 🎨 **Responsive UI** – Mobile-friendly sidebar and adaptive grid layout.  
+- 💾 **Local Storage** – Saved books, learning list, and searches persist across sessions.  
+
+---
+
+## 🖥️ Tech Stack
+
+- **React.js** – UI and state management  
+- **Open Library API** – Book search & ratings data  
+- **CSS (custom)** – Styling and responsiveness  
+- **LocalStorage** – Persistent data storage  
+
+---
+
+## 📂 Project Structure
+
+book_finder/
+│── public/ # Static files (images, favicon, etc.)
+│── src/
+│ ├── App.js # Main React component
+│ ├── App.css # Stylesheet
+│ ├── index.js # React entry point
+│ └── components/ # (Optional) Future components
+│── package.json # Dependencies & scripts
+│── README.md # Project documentation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -62,9 +105,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
+Deployment on Netlify
+
+Push project to GitHub.
+
+Go to Netlify
+, click New Site from Git.
+
+Select your repo and configure:
+
+Branch to deploy: main
+
+Build command: npm run build
+
+Publish directory: build
+
+Deploy → Your app will be live!
+
+Already live at: https://findubook.netlify.app
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Future Enhancements
+
+## Add categories/genres for better browsing
+
+User authentication with cloud storage
+
+PWA support for offline use
+
+Voice-based book search
+
+Contributing
+
+Fork the project
+
+Create a new branch (feature/your-feature)
+
+Commit your changes
+
+Push the branch and create a Pull Request
